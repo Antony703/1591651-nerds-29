@@ -1,0 +1,184 @@
+:root {
+  --light-grey: #eeeeee;
+  --mid-grey: #666666;
+  --dark-grey:#4d4d4d;
+
+  --light-pink: #fb265a;
+  --dark-pink: #e74246;
+  --very-dark-pink: #d7373b;
+
+  --light-green: #00ca74;
+  --dark-green: #00bc6c;
+  --very-dark-green: #00aa62;
+
+  --light-yellow: #efc849;
+  --dark-yellow: #eab534;
+  --very-dark-yellow: #e5a722;
+
+  --bg-white: #ffffff;
+  --icon-color: #e1e1e1;
+
+
+  --light-black: #283136;
+}
+
+body {
+  min-width: 960px;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  background-color: var(--bg-white);
+  background-image: url(nerds-index-slide1.png);
+  background-repeat: no-repeat;
+  background-position: 537px,114px;
+  border-width: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  background-color: var(--light-grey);
+}
+.nav {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.nav a:visited {
+    color: black;
+}
+.nav a:hover {
+  color: var(--light-pink);
+}
+.nav a:active {
+  color: black;
+  opacity: 0.3;
+}
+.nav li {
+  list-style: none;
+}
+
+.desription h2 {
+  font-size: 55px;
+  line-height: 55px;
+
+}
+
+.services h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.services li {
+  list-style: none;
+}
+
+.info {
+  color: var(--light-black);
+}
+.info h3 {
+  color: black;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.list-header {
+  font-weight: bold ;
+  text-transform: uppercase;
+}
+.benefits li {
+  list-style: none;
+}
+.benefits p{
+  color:var(--light-black);
+}
+.benefits h4 {
+  font-size: 45px;
+  line-height: 64px;
+}
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+  vertical-align: text-top;
+}
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  border-width: 0px;
+  border-radius: 3px;
+}
+.button:active {
+  box-shadow: 0 3px 0 rgba(0,1,1,0.1);
+}
+
+.button-web {
+  background-color: var(--light-pink);
+}
+.button-web:hover {
+  background-color: var(--dark-pink);
+}
+.button-web:active {
+  background-color: var(--very-dark-pink);
+}
+
+
+
+.button-app {
+  background-color: var(--light-green);
+}
+.button-app:hover {
+  background-color: var(--dark-green);
+}
+.button-app:active {
+  background-color: var(--very-dark-green);
+}
+
+.button-pres {
+  background-color: var(--light-yellow);
+}
+.button-pres:hover {
+  background-color: var(--dark-yellow);
+}
+.button-pres:active {
+  background-color: var(--very-dark-yellow);
+}
+
+.adress h2 {
+font-size: 18px;
+line-height: 30px;
+}
+.adress p {
+  color: var(--mid-grey) ;
+  font-size: inherit ;
+}
+.contacts-phone {
+  font: inherit;
+}
+.social h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.social p{
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+}

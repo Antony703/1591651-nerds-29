@@ -3,62 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
-   <header>
-
-      <nav>
-        <ul>
+   <header class="header">
+     <a class="main-logo" href="#">
+       <img src="" alt="логотип Nerds">
+     </a>
+      <nav class="nav">
+        <ul class="nav-list">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="cart">
           <li>
             <a href="">Корзина</a>
           </li>
         </ul>
-
       </nav>
     </header>
     <main>
-      <section>
+      <section class="description">
         <h1>Интернет магазин "Nerds"</h1>
         <h2>Долго, дорого, скурпулезно.</h2>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a href="#">Узнать больше</a>
+        <button class="button button-web" type="button">узнать больше </button>
       </section>
 
-      <section>
+      <section class="services">
         <h2>Услуги</h2>
         <ul>
           <li><h3>веб-сайты</h3>
            <p>Мир никогда не будет прежним, после того как увидит ваш веб сайт</p>
-           <a href="#">Заказать</a>
+           <button class="button button-web" type="button">Заказать</button>
          </li>
           <li><h3>приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <button class="button button-app" type="button">Заказать</button>
           </li>
           <li><h3>презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <button class="button button-pres" type="button">Заказать</button>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="info">
         <h2>О нас</h2>
-        <p>
+        <h3>
           Мы-маленькая, но гордая<br>
            дизайн студия из Краснодара.
-        </p>
+        </h3>
          <p>
            Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
             превыше креатива. Работаем непокладая рук, как роботы.
          </p>
-         <p>
+         <p class="list-header">
            Выполняем заказы на разработку:
          </p>
          <ul>
@@ -72,23 +76,26 @@
              Слайдшоу и видео для корпоративных презентаций
            </li>
          </ul>
-         <h3>С 2004 года любим точность во всем:</h3>
+      </section>
+      <section class="benefits">
+         <img src="nerds-logo.png" class="nerds-logo" alt="логотип nerds">
+         <p class="list-header">С 2004 года любим точность во всем:</p>
          <ul>
            <li>
-             <h4>146%</h4>
+             <h4>146<span class="percent">%</span></h4>
              <p>Уровень самоотдачи</p>
            </li>
            <li>
-            <h4>100%</h4>
+            <h4>100<span class="percent">%</span></h4>
             <p>Соблюдение сроков</p>
           </li>
           <li>
-            <h4>50%</h4>
+            <h4>50<span class="percent">%</span></h4>
             <p>Минимальная предоплата</p>
           </li>
          </ul>
       </section>
-      <section>
+      <section class="partners">
         <h2>
           Производители
         </h2>
@@ -115,29 +122,30 @@
 
 
     </main>
-    <footer>
-      <section>
-        <div>
+    <footer class="footer">
+      <section class="contacts">
+        <div class="adress">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная,д. 19/8</p>
-          <p><a href="tel:+78122757575">+7(812)275-75-75</a></p>
+          <p><a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
         </div>
+        <button type="button" class="button button-web"> Напишите нам</button>
       </section>
 
-      <section>
+      <section class="social">
 
         <ul>
           <li>
-            <a href="">Вконтакте</a>
+            <a class="social-button" href="">Вконтакте</a>
           </li>
           <li>
-            <a href="">Фейсбук</a>
+            <a class="social-button" href="">Фейсбук</a>
           </li>
           <li>
-            <a href="">Инстаграм</a>
+            <a class="social-button" href="">Инстаграм</a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
+        <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </section>
     </footer>
