@@ -45,7 +45,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-.header {
+/*header*/
+.header,
+.description {
   background-color: var(--light-grey);
 }
 .nav {
@@ -115,6 +117,57 @@ img {
   line-height: 40px;
   vertical-align: text-top;
 }
+
+/*catalog*/
+.store h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+}
+.sort{
+  text-transform: uppercase;
+}
+.filter {
+  color: var(--light-black);
+}
+.sort h2,
+.filter h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+ }
+ .filter-cost input {
+   background-color: var(--light-grey);
+ }
+
+
+/*footer*/
+.adress h2 {
+  font-size: 18px;
+  line-height: 30px;
+  }
+.adress p {
+    color: var(--mid-grey) ;
+    font-size: inherit ;
+  }
+.contacts-phone {
+    font: inherit;
+    color: inherit;
+  }
+.social h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
+.social p{
+    color: #444444;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+/*buttons*/
 .button {
   font: inherit;
   text-transform: uppercase;
@@ -122,6 +175,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  vertical-align:center;
   border-width: 0px;
   border-radius: 3px;
 }
@@ -160,25 +214,8 @@ img {
 .button-pres:active {
   background-color: var(--very-dark-yellow);
 }
-
-.adress h2 {
-font-size: 18px;
-line-height: 30px;
-}
-.adress p {
-  color: var(--mid-grey) ;
-  font-size: inherit ;
-}
-.contacts-phone {
-  font: inherit;
-}
-.social h3 {
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-}
-.social p{
-  color: #444444;
-  font-size: 16px;
-  line-height: 22px;
+.catalog-button {
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
 }

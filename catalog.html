@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
-   <header>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">Корзина</a>
-          </li>
-        </ul>
-
-      </nav>
-    </header>
+    <header class="header">
+      <a class="main-logo" href="#">
+        <img src="" alt="логотип Nerds">
+      </a>
+       <nav class="nav">
+         <ul class="nav-list">
+           <li><a href="index.html">Студия</a></li>
+           <li><a href="#">Клиенты</a></li>
+           <li><a href="#">Магазин</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+         <ul class="cart">
+           <li>
+             <a href="">Корзина</a>
+           </li>
+         </ul>
+       </nav>
+     </header>
     <main>
-      <section>
+
+      <section class="store">
         <h1>Магазин готовых шаблонов</h1>
         <ul>
           <li><a href="#"><img src="#" alt="sedona"></a> </li>
@@ -36,45 +38,69 @@
           <li><a href="#"><img src="#" alt="a+"></a> </li>
           <li><a href="#"><img src="#" alt="kvast"></a> </li>
         </ul>
+      </section>
+      <section class="store-pages">
         <ul>
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-          <li><a href="#">следующая</a></li>
+          <li><button type="button" class="catalog-button">следующая</button></li>
         </ul>
       </section>
-      <section>
+      <section class="sort">
         <h2>Сортировать:</h2>
-
+          <p>по цене</p>
+          <p>по типу</p>
+          <p>по названию</p>
       </section>
 
-      <section>
+      <section class="filter">
         <h2>Фильтр товаров</h2>
+        <div  class="filter-cost">
+          <h3>стоимость</h3>
+          <input type="range" min="0" max="15000">
+        </div>
+        <div  class="filter-grid">
+          <h3>сетка</h3>
+          <label><input type="radio" name="filter-grid" value="adaptive">адаптивная</label>
+          <label><input type="radio" name="filter-grid" value="static">фиксированная</label>
+          <label><input type="radio" name="filter-grid" value="fluid">резиновая</label>
+        </div>
+        <div class="filter-features">
+          <h3>особенности</h3>
+          <label><input type="checkbox" name="slider-feature"> Слайдер</label>
+          <label><input type="checkbox" name="block-feature"> Блок преимуществ</label>
+          <label><input type="checkbox" name="news-feature"> Новости</label>
+          <label><input type="checkbox" name="gallery-feature"> Галерея</label>
+          <label><input type="checkbox" name="cart-feature"> Корзина</label>
+        </div>
+        <button type="button" class="catalog-button">показать</button>
       </section>
     </main>
-    <footer>
-      <section>
-        <div>
+    <footer class="footer">
+      <section class="contacts">
+        <div class="adress">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная,д. 19/8</p>
-          <p><a href="tel:+78122757575">+7(812)275-75-75</a></p>
+          <p><a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
         </div>
+        <button type="button" class="button button-web"> Напишите нам</button>
       </section>
 
-      <section>
+      <section class="social">
 
         <ul>
           <li>
-            <a href="">Вконтакте</a>
+            <a class="social-button" href="">Вконтакте</a>
           </li>
           <li>
-            <a href="">Фейсбук</a>
+            <a class="social-button" href="">Фейсбук</a>
           </li>
           <li>
-            <a href="">Инстаграм</a>
+            <a class="social-button" href="">Инстаграм</a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
+        <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </section>
     </footer>
