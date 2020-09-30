@@ -1,6 +1,7 @@
 :root {
   --light-grey: #eeeeee;
   --mid-grey: #666666;
+  --mid-dark-grey: #444444;
   --dark-grey:#4d4d4d;
 
   --light-pink: #fb265a;
@@ -18,25 +19,23 @@
   --bg-white: #ffffff;
   --icon-color: #e1e1e1;
 
-
+  --basic-black: #000000;
   --light-black: #283136;
 }
 
 body {
-  min-width: 960px;
+  min-width: 1200px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+
+  font-family: "Roboto","Georgia", serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: black;
+
+  color: var(--basic-black);
   background-color: var(--bg-white);
-  background-image: url(nerds-index-slide1.png);
-  background-repeat: no-repeat;
-  background-position: 537px,114px;
-  border-width: 0px;
-  list-style: none;
+
 }
 a {
   text-decoration: none;
@@ -51,38 +50,37 @@ img {
   background-color: var(--light-grey);
 }
 .nav {
-  color: black;
-  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  font-weight: 500;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
-.nav a:visited {
-    color: black;
-}
+
 .nav a:hover {
   color: var(--light-pink);
 }
 .nav a:active {
-  color: black;
+  color: var(--basic-black);
   opacity: 0.3;
 }
 .nav li {
   list-style: none;
 }
 
-.desription h2 {
+/*index*/
+.slider h2 {
   font-size: 55px;
   line-height: 55px;
 
 }
 
 .services h3 {
-  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .services li {
   list-style: none;
@@ -92,10 +90,10 @@ img {
   color: var(--light-black);
 }
 .info h3 {
-  color: black;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: var(--basic-black);
 }
 
 .list-header {
@@ -120,10 +118,17 @@ img {
 
 /*catalog*/
 .store h1 {
+  text-align: center;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  text-align: center;
+
+}
+.store-pages li {
+  font-size: 16;
+  font-weight: 500;
+  line-height: 18px;
+
 }
 .sort{
   text-transform: uppercase;
@@ -142,19 +147,34 @@ img {
    background-color: var(--light-grey);
  }
 
+.store li {
+  list-style: none;
+}
+.store-pages {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.store-pages li {
+  list-style: none;
+}
 
 /*footer*/
-.adress h2 {
+
+.contacts h2 {
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
   }
-.adress p {
-    color: var(--mid-grey) ;
-    font-size: inherit ;
-  }
+.address {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--mid-grey);
+}
+
 .contacts-phone {
-    font: inherit;
-    color: inherit;
+    color: var(--mid-grey);
   }
 .social h3 {
     font-size: 36px;
@@ -162,16 +182,18 @@ img {
     text-align: center;
   }
 .social p{
-    color: #444444;
+    color: var(--mid-dark-grey);
     font-size: 16px;
     line-height: 22px;
   }
-
+.social li {
+  list-style: none;
+}
 /*buttons*/
 .button {
   font: inherit;
   text-transform: uppercase;
-  color: white;
+  color: var(--bg-white);
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -215,7 +237,7 @@ img {
   background-color: var(--very-dark-yellow);
 }
 .catalog-button {
-  color: black;
+  color: var(--basic-black);
   font-weight: 500;
   text-transform: uppercase;
 }
