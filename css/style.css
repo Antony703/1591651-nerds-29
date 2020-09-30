@@ -136,6 +136,12 @@ img {
 .filter {
   color: var(--light-black);
 }
+.sort {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .sort h2,
 .filter h3 {
   text-transform: uppercase;
