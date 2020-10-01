@@ -28,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "Roboto","Georgia", serif;
+  font-family: "Roboto","Open sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -57,7 +57,9 @@ img {
   color: var(--basic-black);
 }
 
-
+.nav a {
+  color: var(--basic-black);
+}
 .nav a:hover {
   color: var(--light-pink);
 }
@@ -75,7 +77,11 @@ img {
   line-height: 55px;
 
 }
-
+.services a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--bg-white);
+}
 .services h3 {
   font-size: 24px;
   line-height: 30px;
@@ -124,30 +130,45 @@ img {
   line-height: 55px;
 
 }
-.store-pages li {
+.store-item a {
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+color: var(--basic-black);
+}
+.store-pages a {
   font-size: 16;
   font-weight: 500;
   line-height: 18px;
+  color: var(--basic-black);
+}
 
-}
-.sort{
-  text-transform: uppercase;
-}
 .filter {
   color: var(--light-black);
 }
-.sort {
+
+.sort a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  color: var(--basic-black);
+  opacity: 0.3;
   text-transform: uppercase;
 }
+.sort .sort-active {
+  opacity: 1;
+}
+
+.sort li {
+  list-style: none;
+}
+
 .sort h2,
 .filter h3 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
  }
  .filter-cost input {
    background-color: var(--light-grey);
