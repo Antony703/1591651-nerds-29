@@ -121,7 +121,18 @@ img {
   line-height: 40px;
   vertical-align: text-top;
 }
-
+.partners li {
+  list-style: none;
+}
+.partners a {
+  opacity: 20%;
+}
+.partners a:hover {
+  opacity: 1;
+}
+.partners a:active {
+  opacity: 10%;
+}
 /*catalog*/
 .store h1 {
   text-align: center;
