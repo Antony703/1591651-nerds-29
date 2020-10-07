@@ -44,12 +44,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Grid */
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
+  align-content: start;
+}
 /*header*/
+
+.main-header {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  }
+
 .header,
 .description {
   background-color: var(--light-grey);
 }
+
 .nav {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 1160px;
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -67,14 +92,33 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
+.nav-list {
+  justify-self: center;
+  width: 437px;
+  margin: 0;
+  padding: 0;
+
+}
 .nav li {
   list-style: none;
 }
 
 /*index*/
+/* slider */
+.main {
+  width: 1160px;
+  margin: 0 auto;
+}
 .slider h2 {
   font-size: 55px;
   line-height: 55px;
+
+}
+/* services */
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: start;
 
 }
 .services a {
@@ -90,8 +134,16 @@ img {
 }
 .services li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.info-container {
+display: grid;
+grid-template-columns: 2fr 1fr;
+width: 1160px;
+margin: 0 auto;
+}
 .info {
   color: var(--light-black);
 }
@@ -101,7 +153,12 @@ img {
   font-weight: 500;
   color: var(--basic-black);
 }
-
+/* benefits */
+.benefits-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
 .list-header {
   font-weight: bold ;
   text-transform: uppercase;
@@ -120,6 +177,13 @@ img {
   font-size: 26px;
   line-height: 40px;
   vertical-align: text-top;
+}
+/* partners */
+.partners-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1160px;
+  margin: 0 auto;
 }
 .partners li {
   list-style: none;
@@ -200,6 +264,7 @@ color: var(--basic-black);
 
 /*footer*/
 
+
 .contacts h2 {
   font-size: 18px;
   line-height: 30px;
@@ -214,10 +279,17 @@ color: var(--basic-black);
 .contacts-phone {
     color: var(--mid-grey);
   }
+.social {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
+  width: 1160px;
+  margin: 0;
+}
 .social h3 {
     font-size: 36px;
     line-height: 36px;
-    text-align: center;
+    /* text-align: center; */
   }
 .social p{
     color: var(--mid-dark-grey);
