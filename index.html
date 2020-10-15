@@ -10,41 +10,39 @@
 </head>
 
 <body class="page-body">
-  <div class="header-container">
-    <div class="container">
-      <header class="main-header">
-        <a class="main-logo" href="#">
-          <img src="img/nerds-logo.svg" width="160" height="65.02" alt="логотип Nerds">
-        </a>
 
-        <nav class="nav">
-
-          <ul class="nav-list">
-            <li><a href="">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-          <ul class="cart">
-            <li>
-              <a href="">Корзина</a>
-            </li>
-          </ul>
-        </nav>
-
-      </header>
+  <header class="header">
+    <div class="container main-header">
+      <a class="main-logo" href="#">
+        <img src="img/nerds-logo.svg" width="160" height="65.02" alt="логотип Nerds">
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul class="cart">
+          <li>
+            <a href="">Корзина</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
   <main class="main">
 
     <h1>Интернет магазин "Nerds"</h1>
-    <div class="slider-container">
-      <section class="slider">
+
+    <section class="slider">
+      <div class="container">
         <h2>Долго, дорого, скурпулезно.</h2>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
         <button class="button button-web" type="button">узнать больше </button>
-      </section>
-    </div>
+      </div>
+    </section>
+
     <div class="container">
       <section class="services">
         <h2>Услуги</h2>
@@ -147,24 +145,22 @@
   <footer class="main-footer">
 
     <section class="map">
-      <img src="img/map.png" width="1440" height="416" alt="карта">
+      <img class="map-properties" src="img/map.png" width="1440" height="416" alt="карта">
     </section>
 
     <section class="container">
       <div class="social-container">
-        <div class="social-container-1">
-          <ul>
-            <li>
-              <a class="social-button" href=""><img src="img/vk-icon.svg" alt="Вконтакте"></a>
-            </li>
-            <li>
-              <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
-            </li>
-            <li>
-              <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social-container-1">
+          <li class="social-button-container">
+            <a class="social-button" href=""><img src="img/vk-icon.svg" alt="Вконтакте"></a>
+          </li>
+          <li class="social-button-container">
+            <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+          </li>
+          <li class="social-button-container">
+            <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
+          </li>
+        </ul>
         <div class="social-container-2">
           <h3>Давайте дружить, это выгодно!</h3>
           <p>Скидка 10% для друзей из социальных сетей</p>
