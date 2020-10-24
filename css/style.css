@@ -254,6 +254,11 @@ img {
   cursor: pointer;
 }
 
+.slider-controls .current {
+  box-shadow: inset 0 0 0 5px var(--bg-white),
+    inset 0 0 0 7px #c1c1c1;
+}
+
 .slider-list {
 
   padding: 0;
@@ -509,6 +514,7 @@ img {
 
   background-color: var(--light-grey);
 }
+
 .partners li:nth-child(2)::after {
   content: "";
   position: absolute;
@@ -519,6 +525,7 @@ img {
 
   background-color: var(--light-grey);
 }
+
 .partners li:nth-child(3)::after {
   content: "";
   position: absolute;
@@ -767,8 +774,8 @@ img {
 
 .map {
   margin: 0;
-  margin-bottom: 68px;
-  height: 416px;
+
+
 }
 
 .map-properties {
@@ -778,6 +785,41 @@ img {
   height: 416px;
 }
 
+.contacts {
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.contacts h2 {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.address {
+  position: absolute;
+  box-sizing: border-box;
+  left: 20px;
+  bottom: 54px;
+  width: 319px;
+  height: 308px;
+  padding-top: 47px;
+  padding-left: 50px;
+
+  background-color: var(--bg-white);
+
+
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--mid-grey);
+}
+
+.contacts-phone {
+  color: var(--mid-grey);
+}
 
 .social {
   display: grid;
@@ -802,21 +844,7 @@ img {
 
 }
 
-.contacts h2 {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-}
 
-.address {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--mid-grey);
-}
-
-.contacts-phone {
-  color: var(--mid-grey);
-}
 
 .social-2 {
   margin: 0;
@@ -843,31 +871,14 @@ img {
 }
 
 
-.social-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
 
-  background-color: var(--icon-color);
-}
-
-.social-button:hover {
-  background-color: var(--dark-pink);
-}
-
-.social-button:active {
-  background-color: var(--very-dark-pink);
-}
-
-.social-button:active img {
-  opacity: 0.3;
-}
 
 .main-footer li {
   list-style: none;
+}
+
+.reply-form {
+  display: none;
 }
 
 /*buttons*/
@@ -909,7 +920,11 @@ img {
   width: 160px;
   height: 50px;
 }
-
+.button-contacts {
+  margin-top: 40px;
+  width: 219px;
+  height: 50px;
+}
 
 .button-web {
   background-color: var(--light-pink);
@@ -953,4 +968,27 @@ img {
   color: var(--basic-black);
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background-color: var(--icon-color);
+}
+
+.social-button:hover {
+  background-color: var(--dark-pink);
+}
+
+.social-button:active {
+  background-color: var(--very-dark-pink);
+}
+
+.social-button:active img {
+  opacity: 0.3;
 }

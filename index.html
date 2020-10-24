@@ -57,7 +57,7 @@
           </li>
         </ul>
         <div class="slider-controls">
-          <button type="button" aria-label="Первый слайд"></button>
+          <button class="current" type="button" aria-label="Первый слайд"></button>
           <button type="button" aria-label="Второй слайд"></button>
           <button type="button" aria-label="Третий слайд"></button>
         </div>
@@ -169,6 +169,16 @@
       <img class="map-properties" src="img/map.png" width="1440" height="416" alt="карта">
     </section>
 
+    <section class="contacts container">
+      <div class="address">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p> тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+
+        <a class="button button-web button-contacts"> <span>Напишите нам</span></a>
+      </div>
+    </section>
+
     <section class="social container">
 
       <ul class="social-1">
@@ -190,6 +200,21 @@
     </section>
 
   </footer>
+  <section class="modal reply-form">
+    <h2>Напишите нам</h2>
+    <button type="button" class="modal-close"><img src="img/close-cross.svg"></button>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p><label for="reply-name">Ваше имя</label>
+        <input class="login-icon-user" id="reply-name" type="text" name="name" placeholder="Имя Фамилия"></p>
+      <p><label for="reply-email">Ваш email:</label>
+        <input id="reply-email" type="email" name="email" placeholder="email@example.com"></p>
+      <p><label for="reply-message">Текст письма:</label>
+        <textarea id="reply-message" rows="4" name="message">В свободной форме</textarea></p>
+      <button class="button button-web" type="submit">Отправить</button>
+    </form>
+  </section>
+
+
 </body>
 
 </html>
