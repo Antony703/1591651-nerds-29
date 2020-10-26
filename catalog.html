@@ -39,11 +39,35 @@
     <div class="container main-catalog">
 
       <section class="filters">
-        <h2>Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+
           <fieldset class="filter-cost">
             <legend>стоимость</legend>
-
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 60%;
+                    margin-left: 10%">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 10%
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 60%
+                "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-grid">
             <legend>сетка</legend>
@@ -95,80 +119,92 @@
           <li> <a href="">по типу</a></li>
           <li> <a href="">по названию</a></li>
           <li> <a href=""><img src="img/icon-down-dir.svg" width="11" height="10" alt="по убыванию"></a></li>
-          <li> <a href=""><img src="img/icon-up-dir.svg"  width="11" height="10" alt="по возростанию"></a></li>
+          <li> <a href=""><img class="inactive" src="img/icon-up-dir.svg" width="11" height="10" alt="по возростанию"></a></li>
         </ul>
       </section>
       <section class="store">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
 
         <ul class="store-container">
-          <li>
-            <img src="img/img-sedona.jpg" width="358" height="578" alt="sedona">
-            <div class="store-item">
-              <a href="#">
-                <h3>SEDONA</h3>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="button button-web" type="button">9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-sedona.jpg" width="358" height="578" alt="sedona">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>SEDONA</h3>
+                </a>
+                <p>Информационный сайт<br> для туристов</p>
+                <button class="button button-web store-item-button" type="button">9900₽</button>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
-            <div class="store-item">
-              <a href="#">
-                <h3>PINK APP</h3>
-              </a>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="button button-web" type="button"> 9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>PINK APP</h3>
+                </a>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <button class="button button-web store-item-button" type="button"> 9900₽</button>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="img/img-barbershop.jpg " width="358" height="578" alt="borodinsky">
-            <div class="store-item">
-              <a href="#">
-                <h3>BARBERSHOP</h3>
-              </a>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <button class="button button-web" type="button"> 9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-barbershop.jpg " width="358" height="578" alt="borodinsky">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>BARBERSHOP</h3>
+                </a>
+                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                <button class="button button-web store-item-button" type="button"> 9900₽</button>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="img/img-mishka.jpg" width="358" height="578" alt="mishka">
-            <div class="store-item">
-              <a href="#">
-                <h3>MISHKA</h3>
-              </a>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <button class="button button-web" type="button"> 9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-mishka.jpg" width="358" height="578" alt="mishka">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>MISHKA</h3>
+                </a>
+                <p>Интернет-магазин<br> вязаных игрушек</p>
+                <button class="button button-web store-item-button" type="button"> 9900₽</button>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="img/img-aplus.jpg" width="358" height="578" alt="a+">
-            <div class="store-item">
-              <a href="#">
-                <h3>A PLUS</h3>
-              </a>
-              <p>Лендинг курсов<br> повышения квалификации</p>
-              <button class="button button-web" type="button"> 9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-aplus.jpg" width="358" height="578" alt="a+">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>A PLUS</h3>
+                </a>
+                <p>Лендинг курсов повышения<br> квалификации</p>
+                <button class="button button-web store-item-button" type="button"> 9900₽</button>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="img/img-kvast.jpg" width="358" height="578" alt="кваст">
-            <div class="store-item">
-              <a href="#">
-                <h3>КВАСТ</h3>
-              </a>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <button class="button button-web" type="button"> 9900₽</button>
+          <li class="store-item">
+            <div class="store-item-container">
+              <img src="img/img-kvast.jpg" width="358" height="578" alt="кваст">
+              <div class="store-item-description">
+                <a href="#">
+                  <h3>КВАСТ</h3>
+                </a>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button class="button button-web store-item-button" type="button"> 9900₽</button>
+              </div>
             </div>
           </li>
         </ul>
 
         <ul class="store-pages">
-          <li class="store-page"><a>1</a></li>
-          <li class="store-page"><a href="#">2</a></li>
-          <li class="store-page"><a href="#">3</a></li>
-          <li class="store-page-next"><a href="#">следующая</a></li>
+          <li class="store-page button store-page-current"><a href="#">1</a></li>
+          <li class="store-page button"><a href="#">2</a></li>
+          <li class="store-page button"><a href="#">3</a></li>
+          <li class="store-page store-page-next  button"><a href="#">следующая</a></li>
         </ul>
 
       </section>
@@ -178,49 +214,35 @@
     <section class="map">
       <img class="map-properties" src="img/map.png" width="1440" height="416" alt="карта">
     </section>
-    <!-- <section class="contacts">
-        <div class="address">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная,д. 19/8</p>
-          <p><a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
-        </div>
-        <button type="button" class="button button-web"> Напишите нам</button>
-      </section> -->
 
-    <!-- <section class="social">
+    <section class="contacts container">
+      <div class="address">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p> тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
 
-        <ul>
-          <li>
-            <a class="social-button" href="">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="">Инстаграм</a>
-          </li>
-        </ul>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </section> -->
-    <section class="container">
-      <div class="social-container">
-        <ul class="social-container-1">
-          <li>
-            <a class="social-button" href=""><img src="img/vk-icon.svg" alt="Вконтакте"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
-          </li>
-        </ul>
-        <div class="social-container-2">
-          <h3>Давайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
+        <a class="button button-web button-contacts"> <span>Напишите нам</span></a>
       </div>
+    </section>
+
+    <section class="social container">
+
+      <ul class="social-1">
+        <li>
+          <a class="social-button" href=""><img src="img/vk-icon.svg" alt="Вконтакте"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
+        </li>
+      </ul>
+      <div class="social-2">
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+
     </section>
   </footer>
 </body>
