@@ -97,7 +97,7 @@
               </li>
               <li>
                 <input class="input-feature" type="checkbox" name="news-feature" id="news-feature" checked>
-                <label  class="feature-label" for="news-feature"> Новости</label>
+                <label class="feature-label" for="news-feature"> Новости</label>
               </li>
               <li>
                 <input class="input-feature" type="checkbox" name="gallery-feature" id="gallery-feature">
@@ -114,13 +114,17 @@
       </section>
       <section class="sort">
         <h2>Сортировать:</h2>
-        <ul>
-          <li> <a class="sort-active" href="">по цене</a></li>
-          <li> <a href="">по типу</a></li>
-          <li> <a href="">по названию</a></li>
-           <li> <a class="sort-descending" href=""></a></li>
-          <li> <a class="sort-ascending" href=""></a></li>
-        </ul>
+        <div class="sort-container">
+          <ul class="sort-list">
+            <li> <a class="sort-active" href="">по цене</a></li>
+            <li> <a href="">по типу</a></li>
+            <li> <a href="">по названию</a></li>
+          </ul>
+          <ul class="arrows">
+            <li><a class="sort-descending sort-active" href=""></a></li>
+            <li><a class="sort-ascending" href=""></a></li>
+          </ul>
+        </div>
       </section>
       <section class="store">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
@@ -202,9 +206,9 @@
 
         <ul class="store-pages">
           <li><a class="store-page button store-page-current" href="#">1</a></li>
-          <li ><a class="store-page button" href="#">2</a></li>
-          <li ><a class="store-page button" href="#">3</a></li>
-          <li ><a class="store-page store-page-next  button" href="#">следующая</a></li>
+          <li><a class="store-page button" href="#">2</a></li>
+          <li><a class="store-page button" href="#">3</a></li>
+          <li><a class="store-page store-page-next  button" href="#">следующая</a></li>
         </ul>
 
       </section>
@@ -226,7 +230,6 @@
     </section>
 
     <section class="social container">
-
       <ul class="social-1">
         <li>
           <a class="social-button" href=""><img src="img/vk-icon.svg" alt="Вконтакте"></a>
@@ -242,9 +245,21 @@
         <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </section>
   </footer>
+  <section class="modal reply-form">
+    <h2 class="modal-header">Напишите нам</h2>
+    <button class="modal-close" type="button" class="modal-close" aria-label="закрыть"></button>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="user-name"><label for="reply-name">Ваше имя:</label>
+        <input id="reply-name" type="text" name="name" placeholder="Имя Фамилия" required></p>
+      <p class="user-email"><label for="reply-email">Ваш email:</label>
+        <input id="reply-email" type="email" name="email" placeholder="email@example.com" required></p>
+      <p class="user-message"><label for="reply-message">Текст письма:</label>
+        <textarea id="reply-message" rows="4" name="message" placeholder="В свободной форме"></textarea></p>
+      <button class="button button-web modal-button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
