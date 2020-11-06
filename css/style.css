@@ -84,11 +84,11 @@ img {
 }
 
 .page-body {
-  min-height: 100%;
+
   display: grid;
-  grid-template-rows:
-    min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  min-height: 100%;
 }
 
 .container {
@@ -173,14 +173,14 @@ img {
 }
 
 .cart {
+  position: relative;
   display: block;
   width: min-content;
-  position: relative;
   margin: 0;
   margin-left: auto;
   margin-top: auto;
-  padding: 0;
   margin-bottom: 8px;
+  padding: 0;
   list-style: none;
 }
 
@@ -239,8 +239,8 @@ img {
   left: 555px;
   z-index: 1;
   display: flex;
-  width: 88px;
   justify-content: space-between;
+  width: 88px;
 }
 
 .slider-controls button {
@@ -262,7 +262,6 @@ img {
 
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 
@@ -338,18 +337,16 @@ img {
 }
 
 .services li {
-  list-style: none;
   margin: 0;
-
   padding: 0;
+  list-style: none;
 }
 
 .info-container {
-  margin-top: 40px;
-  margin-bottom: 43px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-
+  margin-top: 40px;
+  margin-bottom: 43px;
 }
 
 .info {
@@ -387,12 +384,11 @@ img {
 .info li::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 2px;
   top: 10px;
   left: -32px;
+  width: 25px;
+  height: 2px;
   background-color: var(--light-pink);
-
 }
 
 /* benefits */
@@ -454,15 +450,9 @@ img {
 .partners-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
-
-  /* outline: 1px solid rgb(248, 5, 5);
-  outline-offset: -1px; */
-
+  height: 180px;
   margin: 0;
   padding: 0;
-
-  height: 180px;
   border-top: 2px solid var(--light-grey);
   border-bottom: 2px solid var(--light-grey);
 
@@ -471,17 +461,12 @@ img {
 .partners li {
   position: relative;
   align-self: center;
-
-
+  justify-self: end;
   margin: 0;
   padding: 0;
-  justify-self: end;
   list-style: none;
-
-
   /* outline: 1px solid rgba(0, 255, 255, 1);
   outline-offset: -1px; */
-
 }
 
 .partners li:nth-child(1) {
@@ -512,7 +497,6 @@ img {
   right: -51px;
   width: 2px;
   height: 52px;
-
   background-color: var(--light-grey);
 }
 
@@ -523,7 +507,6 @@ img {
   right: -45px;
   width: 2px;
   height: 52px;
-
   background-color: var(--light-grey);
 }
 
@@ -534,7 +517,6 @@ img {
   right: -57px;
   width: 2px;
   height: 52px;
-
   background-color: var(--light-grey);
 }
 
@@ -553,8 +535,8 @@ img {
 }
 
 .catalog-top {
-  margin-bottom: 54px;
   height: 242px;
+  margin-bottom: 54px;
   background-color: var(--light-grey);
 }
 
@@ -564,9 +546,7 @@ img {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-
   text-align: center;
-
 }
 
 
@@ -587,8 +567,9 @@ img {
 .filter ul {
   padding: 0;
   margin: 0;
-  list-style: none;
   line-height: 19px;
+  list-style: none;
+
 }
 
 .filter legend {
@@ -631,7 +612,7 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--range-special-scale);
 }
 
 .range-controls .bar {
@@ -647,8 +628,8 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid var(--bg-white);
   background-color: var(--range-special-toggle);
+  border: 8px solid var(--bg-white);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--range-special-shadow);
   cursor: pointer;
@@ -669,8 +650,8 @@ img {
 
 .price-controls label {
   text-transform: uppercase;
-  color: var(--light-black);
   font-size: 16px;
+  color: var(--light-black);
 }
 
 .price-controls input {
@@ -702,10 +683,9 @@ img {
 }
 
 .filter-grid label {
+  position: relative;
   padding-left: 36px;
   color: var(--light-black);
-  position: relative;
-
 }
 
 .input-grid {
@@ -722,8 +702,8 @@ img {
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
   border: 4px solid var(--dark-grey);
+  border-radius: 50%;
   background-color: transparent;
   opacity: 0.4;
 }
@@ -748,8 +728,8 @@ img {
 
 /* FEATURES FILTER */
 .input-feature {
-  appearance: none;
   position: absolute;
+  appearance: none;
 }
 
 
@@ -848,13 +828,13 @@ img {
 }
 
 .sort-container a {
-  /* display: inline-block; */
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: var(--basic-black);
   opacity: 0.3;
-  text-transform: uppercase;
+
 }
 
 .sort-container a:hover {
@@ -921,11 +901,10 @@ img {
 .store-item {
   position: relative;
   box-sizing: border-box;
-  border-radius: 5px;
   width: 360px;
   height: 620px;
+  border-radius: 5px;
   list-style: none;
-
 }
 
 .store-item:hover {
@@ -937,18 +916,18 @@ img {
   width: 360px;
   height: 580px;
   margin-top: 40px;
-  border-radius: 0 0 5px 5px;
-  border: 1px solid var(--catalog-border-special);
   background-color: var(--bg-white);
+  border: 1px solid var(--catalog-border-special);
+  border-radius: 0 0 5px 5px;
 }
 
 .store-item::before {
   content: "";
   position: absolute;
-  width: 360px;
-  height: 40px;
   top: 0px;
   left: 0px;
+  width: 360px;
+  height: 40px;
   background-image: url(../img/browser.svg);
   opacity: 0.12;
 }
@@ -978,20 +957,19 @@ img {
 }
 
 .store-item-description {
-  display: none;
   position: absolute;
+  display: none;
   bottom: 0;
   left: 0;
   box-sizing: border-box;
   width: 360px;
   height: 231px;
-  border-radius: 0 0 5px 5px;
   padding-left: 52px;
   padding-right: 53px;
   padding-top: 11px;
-  background-color: var(--light-grey);
   text-align: center;
-
+  background-color: var(--light-grey);
+  border-radius: 0 0 5px 5px;
 }
 
 .store-item-description h3 {
@@ -1023,7 +1001,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: #666666;
+  color: var(--mid-grey);
 }
 
 /* STORE-PAGES */
@@ -1031,7 +1009,6 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
@@ -1039,6 +1016,7 @@ img {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .store-pages li:not(:last-child) {
@@ -1058,9 +1036,9 @@ img {
 
 .map-properties {
   display: block;
+  height: 416px;
   margin-left: auto;
   margin-right: auto;
-  height: 416px;
 }
 
 .contacts {
@@ -1087,12 +1065,10 @@ img {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 39px;
-
-  background-color: var(--bg-white);
-
   font-size: 16px;
   line-height: 18px;
   color: var(--mid-grey);
+  background-color: var(--bg-white);
 }
 
 .contacts-phone {
@@ -1110,9 +1086,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .social-1 li {
@@ -1135,21 +1111,20 @@ img {
 
 .social p {
   margin: 0;
-  color: var(--mid-dark-grey);
   font-size: 16px;
   line-height: 22px;
-
+  color: var(--mid-dark-grey);
 }
 
 /* MODAL */
 .modal {
-  display: none;
   position: fixed;
-  z-index: 2;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
   box-sizing: border-box;
   width: 960px;
   height: 590px;
@@ -1251,8 +1226,8 @@ img {
 
 .login-form input,
 .login-form textarea {
-  border: 2px solid var(--input-border);
   box-sizing: border-box;
+  border: 2px solid var(--input-border);
   border-radius: 3px;
   opacity: 0.5;
 }
@@ -1265,26 +1240,26 @@ img {
 
 .login-form input:focus:invalid,
 :-moz-ui-invalid {
-  border-color: var(--dark-pink);
   color: var(--dark-pink);
+  border-color: var(--dark-pink);
 }
 
 
 
 /*buttons*/
 .slider-button {
-  margin-top: 39px;
   width: 240px;
   height: 50px;
+  margin-top: 39px;
 }
 
 .button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   color: var(--bg-white);
   border: none;
@@ -1293,8 +1268,8 @@ img {
 }
 
 .button:active {
-  box-shadow: inset 0 3px 0 var(--button-shadow);
   color: var(--bg-white-opacity);
+  box-shadow: inset 0 3px 0 var(--button-shadow);
 }
 
 
@@ -1401,9 +1376,8 @@ img {
   justify-content: center;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-
   background-color: var(--icon-color);
+  border-radius: 50%;
 }
 
 .social-button:hover {
