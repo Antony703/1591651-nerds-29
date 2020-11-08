@@ -14,6 +14,7 @@ let validEmail = false;
 
 try {
   storageName = localStorage.getItem("name");
+  storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -34,7 +35,6 @@ openForm.addEventListener("click", function (evt) {
   }
   if (validEmail && validName) {
     modalMessage.focus();
-    console.log("ok 1");
   }
 });
 
@@ -47,32 +47,30 @@ modalClose.addEventListener("click", function (evt) {
 });
 
 modalForm.addEventListener("submit", function (evt) {
+  // if (!modalName.value || !modalEmail.value) {
+  // if (!modalName.value) {
+  //   modalName.classList.add("reply-error");
+  //   modalName.focus();
+  // }
+  if (!modalEmail.value && !modalName.value) {
+    modalName.classList.add("reply-error")
+    modalEmail.classList.add("reply-error");
+    modalName.focus();
+    evt.preventDefault();
+  } else if (!modalName.value) {
+    modalName.classList.add("reply-error");
+    modalEmail.classList.remove("reply-error");
+    modalName.focus();
+    evt.preventDefault();
+  } else if (!modalEmail.value) {
+    modalEmail.classList.add("reply-error");
+    modalName.classList.remove("reply-error");
+    modalEmail.focus();
+    evt.preventDefault();
+  } else if (isStorageSupport) {
+    localStorage.setItem("name", modalName.value);
+    localStorage.setItem("email", modalEmail.value);
 
-  if (!modalName.value || !modalEmail.value) {
-    // evt.preventDefault();
-
-    if (!modalName.value) {
-      modalName.classList.add("reply-error");
-      // evt.preventDefault();
-      console.log("error-name");
-      modalName.focus();
-    }
-    if (!modalEmail.value) {
-      // evt.preventDefault();
-      modalEmail.classList.add("reply-error");
-      modalEmail.focus();
-      console.log(modalEmail.classList);
-    }
-
-   evt.preventDefault();
-
-  } else {
-    if (isStorageSupport) {
-      evt.preventDefault();
-      localStorage.setItem("name", modalName.value);
-      localStorage.setItem("email", modalEmail.value);
-
-    }
   }
 });
 window.addEventListener("keydown", function (evt) {
