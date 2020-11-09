@@ -865,6 +865,7 @@ img {
 
 .sort-descending {
   display: inline-block;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   background-image: url(../img/icon-down-dir.svg);
